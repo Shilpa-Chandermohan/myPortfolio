@@ -1,0 +1,568 @@
+body{
+	background-color: #00bff3;
+	overflow:hidden
+}
+.toast{
+	position: fixed;
+    height: 65px;
+    width: 100%;
+    background-color: #ea00ff;
+    text-align: center;
+    line-height: 65px;
+    z-index: 5;
+	display:none;
+	font-weight: 700;
+}
+.container-fluid{
+	overflow:hidden
+}
+.carouselContainer{
+	width:500%;
+	height:100%;
+	position:absolute;
+	/* overflow:auto; */
+	-webkit-transition: linear 0.5s;
+    transition: linear 0.5s
+}
+.page{
+	width:19%;
+	height:80%;
+	position:relative;
+	float:left
+}
+.footer{
+	width:100%;
+	height:21%;
+	float:left;
+	background-color:#6f1f1f
+}
+.page1{
+	width:15%;
+}
+.page2{
+	width:10%;
+}
+.page4{
+	background: rgba(0,191,243,1);
+background: -moz-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(9,185,233,1) 9%, rgba(53,158,184,1) 51%, rgba(55,113,128,1) 78%, rgb(44, 79, 86) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,191,243,1)), color-stop(9%, rgba(9,185,233,1)), color-stop(51%, rgba(53,158,184,1)), color-stop(78%, rgba(55,113,128,1)), color-stop(100%, rgb(44, 79, 86)));
+background: -webkit-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(9,185,233,1) 9%, rgba(53,158,184,1) 51%, rgba(55,113,128,1) 78%, rgb(44, 79, 86) 100%);
+background: -o-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(9,185,233,1) 9%, rgba(53,158,184,1) 51%, rgba(55,113,128,1) 78%, rgb(44, 79, 86) 100%);
+background: -ms-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(9,185,233,1) 9%, rgba(53,158,184,1) 51%, rgba(55,113,128,1) 78%, rgb(44, 79, 86) 100%);
+background: linear-gradient(to right, rgba(0,191,243,1) 0%, rgba(9,185,233,1) 9%, rgba(53,158,184,1) 51%, rgba(55,113,128,1) 78%, rgb(44, 79, 86) 100%)
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bff3', endColorstr='#294f57', GradientType=1 );
+}
+.page5{
+	background-color:rgba(41,79,87,1)
+}
+.section1,.section2,.section3{
+	width:100%;
+	position:relative;
+	
+}
+.section1{
+	height:30%
+}
+.section2{
+	height:70%;
+}
+.section3{
+height: 30%;
+    margin-top: -30%;	
+}
+.page4section3{
+	width:100%;
+    height: 150%;
+    position: absolute;
+    bottom: 100%;
+    background: -webkit-linear-gradient(left, rgba(0,191,243,1) 0%, rgba(9,185,233,1) 9%, rgba(53,158,184,1) 51%, rgba(55,113,128,1) 78%, rgb(44, 79, 86) 100%);
+}
+.page5section3{
+	width:200%;
+	height: 200%;
+    position: absolute;
+    bottom: 100%;
+    background: rgba(41,79,87,1)
+}
+/* 
+#section2{
+	left:20%
+} */
+/************************************/
+.cloud-container{
+	height:50%;
+	 float:left
+}
+.foot{
+	width: 100%;
+    position: relative;
+	float:left
+}
+.foot1{
+	background-image:url('../images/grass1.png');
+	height:47px
+}
+.foot2{
+	background-color:#6f1f1f;
+	height:60px;
+	color:black;
+	font-size:2e
+}
+.ocean{
+	width:83%;
+	height:139%;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(0,50,150)),
+		color-stop(0.50, rgb(0,150,255))
+	);
+/* 	top:-58%*/
+	top:-40%
+}
+
+.wave{
+  background:#00bff3;
+  display:inline-block;
+  height:60%;
+  width:10px;
+  position:absolute;
+  -webkit-animation-name:             dostuff; 
+  -webkit-animation-duration:         3s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes dostuff{
+  0%{
+    height:30%;
+  }
+  50%{ 
+    height:20%;
+  }
+  100%{ 
+    height:30%;
+  }
+}
+.shilpa,.me{
+	margin-left: 200px;
+    height: 19%;
+    position: absolute;
+    float: left;
+    top: 61%;
+    -webkit-transition: linear 0.5s;
+    transition: linear 0.5s;
+	z-index:1
+}
+.me{
+	visibility:hidden
+}
+
+.imgs{
+	margin: auto;
+	position:absolute;
+}
+.intro{
+	bottom:0
+}
+.house{
+	z-index:2;
+	height:100%;
+	bottom:0;
+	position:relative;
+	float:right
+}
+#crossPoint{
+	visibility: hidden;
+	position: relative;
+	visibility: hidden;
+    left: -24px;
+	float:right
+}
+#crossPoint1{
+	visibility:hidden
+}
+.footPage1{
+	height:100%;
+	width:24%;
+	float:left
+}
+.boat{
+	-webkit-animation: rock-boat 3s ease-in-out infinite;
+	top:65%
+}
+.kite{
+	position:relative;
+	z-index:2;
+	background:url("../images/kite.png");
+	background-repeat: no-repeat;
+	background-position: top;
+    background-size: contain;
+    height: 150%;
+    width: 30%;
+    top: -13%;
+	left:68%;
+	-webkit-animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  /* -webkit-transform-origin:50% 0%; */
+  /* -webkit-animation-timing-function:ease-in-out; */ /* or make your custom easing */
+}
+@-webkit-keyframes rotate {
+  0%   { -webkit-transform: rotate(0deg); }
+  40%  { -webkit-transform: rotate(45deg); }
+  70%  { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+
+@-webkit-keyframes rock-boat {
+    50%  { -webkit-transform: rotate(-5deg) translateY(-10px); }
+}
+@-moz-keyframes rock-boat {
+    50%  { -webkit-transform: rotate(-5deg) translateY(-10px); }
+}
+@keyframes rock-boat {
+    50%  { -webkit-transform: rotate(-5deg) translateY(-10px); }
+}
+/************************* Rainbow - Start *********************************/
+.rainbow {
+  position: relative;
+    width: 95vw;
+    height: 45vw;
+    overflow: hidden;
+    background: transparent;
+    transform: translate(-50vw, -23.666vw);
+    top: 0vw;
+    left: 23vw;
+}
+ .rainbow:after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  top: 25vw;
+  left: 25vw;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2vw #4200AB, 0 0 0 4vw #000095, 0 0 0 6vw #00ABFF, 0 0 0 8vw #00C800, 0 0 0 10vw #FFF800, 0 0 0 12vw #FF7642, 0 0 0 14vw #E40000;
+  background:url('../images/cloud.png') no-repeat;
+}
+.rainbow:before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  top: 26vw;
+    left: 68vw;
+    z-index: 1;
+  background:url('../images/cloud.png') no-repeat;
+}
+.abtMeCloud{
+	top: -70px;
+	margin-left:11%;
+    width: 180px;
+	line-height:40px;
+	text-align: center;
+    height: 100%;
+    position: absolute;
+    background: url(../images/cloudStudy.png) no-repeat;
+	-webkit-animation: rock 3s ease-in-out infinite;
+}
+@-webkit-keyframes rock {
+	0%{-webkit-transform: rotate(0deg) }
+    50%  { -webkit-transform: rotate(-10deg)  }
+	100%  { -webkit-transform: rotate(0deg)  }
+}
+
+.abtMeCloud:nth-of-type(1){
+	background: url(../images/cloudStudy.png) no-repeat;
+}
+.abtMeCloud:nth-of-type(2){
+	margin-left:30%;
+	background: url(../images/cloudPlay.png) no-repeat;
+}
+
+/***************************************************/
+
+.rocket{
+	height:100%;
+	transition: linear 0.5s;
+	position:absolute;
+	z-index:1
+}
+.rocketBounce{
+	animation: bounce 0.5s infinite
+}
+.rocketTilt{
+    transform: rotate(58deg);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate3d(0px, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0px, -4px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+}
+.meAnim{
+	-webkit-animation: myOrbit 4s linear;
+	visibility:visible;
+	-webkit-animation-fill-mode: forwards;
+}
+#crossPoint2{
+	width: 25px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+	visibility:hidden
+}
+#crossPoint3{
+	width: 25px;
+    height: 100%;
+    top: 0px;
+    right: 70%;
+    position: absolute
+}
+
+@-webkit-keyframes myOrbit {
+  0% {
+    -webkit-transform: translateX(0px) translateY(0px)
+  }
+  20% {
+    -webkit-transform: translateX(20px) translateY(-100px) 
+  }
+  40% {
+    -webkit-transform: translateX(30px) translateY(-110px)
+  }
+  100% {
+    -webkit-transform: translateX(130px) translateY(-130px);
+	visibility:hidden
+  }
+}
+.pluto,.jupiter,.earth,.saturn{
+	position: absolute;
+    bottom: 192px;
+	background-size:100% 100%;
+}
+.pluto{
+	width: 100px;
+    height: 100px;
+	background-image:url('../images/pluto.jpg');
+}
+.saturn{
+	width: 140px;
+    height: 110px;
+	background-image:url('../images/saturn.png');
+}
+.saturn .beginner{
+	width: 140px;
+    height: 110px;
+    line-height: 110px;
+}
+.earth{
+	width: 100px;
+    height: 100px;
+	background-image:url('../images/earth.png');
+	left:25%
+}
+.jupiter{
+	width: 100px;
+    height: 100px;
+	background-image:url('../images/jupiter.png');
+	left:55%;
+	color: #fff
+}
+.beginner,.proficient{
+	color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+	text-align: center;
+    line-height: 100px;
+	animation:spin 8s linear infinite;-webkit-animation:spin 8s linear infinite
+}
+.proficient{
+	animation:spin 10s linear infinite;-webkit-animation:spin 8s linear infinite;
+	
+}
+.plannets >* {position:absolute;left:50%;top:50%}
+
+.one {
+	width:70px;
+	height:70px;
+	color:#333;
+	text-align: center;
+    line-height: 70px;
+	border-radius:40px;
+	background-size:100% 100%;
+	margin:-6px 0 0 68px}
+.beginner .one{
+	background-image:url('../images/moon/moon1.png');
+}
+.beginner .two{
+	background-image:url('../images/moon/moon2.png');
+}
+.beginner .three{
+	background-image:url('../images/moon/moon3.png');
+	color:#fff
+}
+.saturn .beginner .three{
+	line-height: 90px;
+}
+
+.earth .one{
+	background-image:url('../images/moon/moon8.png');
+	width : 78px
+}
+.earth .two{
+	background-image:url('../images/moon/moon7.png');
+}
+.earth .three{
+	background-image:url('../images/moon/moon3.png');
+}
+.two {    width: 80px;
+    height: 80px;
+	background-size:100% 100%;
+    text-align: center;
+    line-height: 80px;
+	margin:47px 0 0 19px}
+.three{    
+	width: 90px;
+    height: 90px;
+	background-size:100% 100%;    
+	margin: 0px 0 0 -144px;
+}
+.four{
+	width: 90px;
+    height: 90px;
+	line-height:90px;
+	background-size:100% 100%;    
+	margin: 0px 0 0 -144px;
+	color:#000;
+	background-image:url('../images/moon/moon6.gif');
+}
+.five{
+	width: 105px;
+    height: 93px;
+    line-height: 93px;
+	color:#000;
+	background-size:100% 100%;    
+	margin: 0px 0 0 60px;
+	background-image:url('../images/moon/moon8.png');
+}
+
+@keyframes spin {from{transform:none} to{transform:rotate(-360deg)}}
+@-webkit-keyframes spin {from{-webkit-transform:none} to{-webkit-transform:rotate(-360deg)}}
+/* Rocket descending - start */
+.rocketDown{
+	width: 160%;
+    height: 600%;
+	background: rgba(55,113,128,1);
+background: -moz-linear-gradient(top, rgba(41,79,87,1) 0%, rgba(41,79,87,1) 18%, rgba(0,191,243,1) 31%, rgba(0,191,243,1) 38%, rgba(0,191,243,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41,79,87,1)), color-stop(18%, rgba(41,79,87,1)), color-stop(31%, rgba(0,191,243,1)), color-stop(38%, rgba(0,191,243,1)), color-stop(100%, rgba(0,191,243,1)));
+background: -webkit-linear-gradient(top, rgba(41,79,87,1) 0%, rgba(41,79,87,1) 18%, rgba(0,191,243,1) 31%, rgba(0,191,243,1) 38%, rgba(0,191,243,1) 100%);
+background: -o-linear-gradient(top, rgba(41,79,87,1) 0%, rgba(41,79,87,1) 18%, rgba(0,191,243,1) 31%, rgba(0,191,243,1) 38%, rgba(0,191,243,1) 100%);
+background: -ms-linear-gradient(top, rgba(41,79,87,1) 0%, rgba(41,79,87,1) 18%, rgba(0,191,243,1) 31%, rgba(0,191,243,1) 38%, rgba(0,191,243,1) 100%);
+background: linear-gradient(to bottom, rgba(41,79,87,1) 0%, rgba(41,79,87,1) 18%,  31%, rgba(0,191,243,1) 38%, rgba(0,191,243,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#377180', endColorstr='#00bff3', GradientType=0 );
+
+}
+
+.links{
+	width: 15%;
+    height: 100%;
+    float: right;
+	margin-right: 35%;
+}
+.awards{
+	width:400px;
+	height:400px;
+	margin-bottom:10%;
+	background-size:100% 100%
+}
+.awards:nth-of-type(1){
+	background-image:url('../images/scholarship.png');
+}
+.awards:nth-of-type(2){
+	background-image:url('../images/hackathon.png');
+}
+.awards:nth-of-type(3){
+	background-image:url('../images/wizkid.png');
+}
+.awards:nth-of-type(4){
+	background-image:url('../images/mentor.png');
+}
+.awards:nth-of-type(5){
+	background-image:url('../images/resume.png');
+	height:4%
+}
+.awards:nth-of-type(5){
+	cursor: pointer; cursor: hand;
+}
+.awards:nth-of-type(6){
+	background-image:url('../images/mail.png');
+}
+.mail{
+	background:transparent;
+	border:none
+}
+#userMessage{
+	height: 160.6px !important;
+    width: 246px;
+    margin-top: 49px;
+    margin-right: 18px;
+    float: right;
+}
+#subject{
+	float: right;
+    margin-top: 40px;
+    margin-right: 37px;
+    height: 35px;
+    width: 208px;
+}
+#userEmail{
+	float: right;
+    margin-top: 25px;
+    margin-right: 37px;
+    height: 35px;
+    width: 208px;
+}
+.sendemail{
+	margin-left: 207px;
+    margin-top: 29px;
+}
+.sendemail:hover{
+	cursor: pointer; cursor: hand;
+}
+.infoDirection{
+    font-size:30px;
+	color:#fff;
+	margin-left:20px
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .carouselContainer{
+		height:90%
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

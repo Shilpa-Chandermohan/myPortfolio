@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/touch.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="portfolio" ng-controller="shilpacontroller">
+	<div class="toast"></div>
+	<div class="container-fluid">
+			<div id="carouselContainer" class="carouselContainer">
+				<div class="page page1">
+					<div class="section1">
+						<img class="img-responsive cloud-container" src="./images/cloud.png"/>
+					</div>
+					<div class="section2">
+						<img class="img-responsive imgs intro" src="./images/intro.png"/>
+					</div>
+				</div>
+				<div class="page page2">
+					<div class="section1">
+						<!-- <img class="img-responsive cloud-container kite" src="./images/kite.png"/> -->
+						<div class="kite"></div>
+					</div>
+					<div id="section2" class="section2">
+						<p class="imgs house" id="crossPoint1">C</p>
+						<img class="img-responsive imgs house" src="./images/house.png"/>
+						
+					</div>
+				</div>
+				<div class="page page3">
+					<div class="section1">
+						<img class="img-responsive cloud-container" src="./images/cloud.png"/>
+					</div>
+					<div class="section2">
+						
+						<div class="rainbow">
+							
+						</div>
+						<div class="abtMeCloud">
+						<!-- <p><span>Live and study</span></p><p><span>at Arlington</span></p> -->
+						</div>
+						<div class="abtMeCloud">
+						<!-- <p>Enjoy playing</p><p>Pool &amp; table tennis</p> -->
+						</div>
+						<p id="crossPoint2">C</p>
+					</div>
+				</div>
+				<div class="page page4">
+					<div class="page4section3">
+					    <div class="pluto">
+							<div class="beginner plannets">Beginner
+								<div class="one">LESS</div>
+								<div class="two">Android</div>
+								<div class="three">Photoshop</div>
+							</div>
+						</div>
+						<div class="jupiter">
+							<div class="proficient plannets">Familiar
+								<div class="four">Bootstrap</div>
+								<div class="five">MongoDB</div>
+							</div>
+						</div>
+					</div>
+					<div class="section1">
+						<img class="img-responsive cloud-container" src="./images/cloud.png"/>
+					</div>
+					<div class="section2">
+						<img src="./images/rocket.png" class="img-responsive rocket rocketBounce" />
+					</div>
+					
+				</div>
+				<div class="page page5">
+					<div class="page5section3">
+						<div class="saturn">
+							<div class="beginner plannets">Proficient
+								<div class="one">JAVA</div>
+								<div class="two">Node.js</div>
+								<div class="three">Backbone.js</div>
+							</div>
+						</div>
+						<div class="earth">
+							<div class="proficient plannets">Expert
+								<div class="one">jQuery</div>
+								<div class="two">Angular</div>
+								<div class="three">JavaScript</div>
+							</div>
+						</div>
+						<p class="imgs house" id="crossPoint3">C</p>
+					</div>
+					<div class="rocketDown">
+						<div class="links">
+							<div class="awards">
+							</div>
+							<div class="awards">
+							</div>
+							<div class="awards">
+							</div>
+							<div class="awards">
+							</div>
+							<div onclick="window.open('shilpa-resume.pdf')" class="awards">
+								
+							</div>
+							<div class="awards">
+								<div>
+									<input type="text" ng-model="email" class="mail" id="userEmail" placeholder="Enter email" />
+								</div>
+								<div>
+									<input type="text" ng-model="emailsubject" class="mail" id="subject" placeholder="Enter subject"/>
+								</div>
+								<div>
+									<textarea type="text" ng-model="emailmessage" class="mail" id="userMessage" placeholder="Enter message"></textarea>
+								</div>
+								<img src="./images/sendEmail.png" class="sendemail" data-ng-click="emailMe($event)"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="img-responsive shilpa" src="./images/shilpa.png"/>
+				<img class="img-responsive me" src="./images/me.png"/>
+				<div class="footer">
+					<div class="footPage1">
+						<div class="foot foot1"></div>
+						<div class="foot foot2">
+							<p class="infoDirection">Press right arrow to move!</p>
+						</div>
+					</div>
+					<div class="footPage1">
+						<div id="ocean" class="foot ocean"></div>
+					</div>
+					
+				</div>
+			</div>
+	</div>
+<script src="js/main.js"></script>
+</body>
+</html>
